@@ -1,1 +1,45 @@
-site_name: My Docs
+site_name: smallzh's Rust
+site_description: Rust核心知识库
+site_author: smallzh
+
+theme:
+  name: smzhbook
+  locale: zh_CN
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - 首页: index.md
+  - 基础部分:
+    - 简介与安装: basics/introduction.md
+    - 基本语法与数据类型: basics/syntax_and_types.md
+    - 所有权与借用: basics/ownership.md
+    - 生命周期: basics/lifetimes.md
+    - 结构体与枚举: basics/structs_and_enums.md
+    - 模式匹配: basics/pattern_matching.md
+    - 错误处理: basics/error_handling.md
+    - 泛型与特征: basics/generics_and_traits.md
+    - 集合类型: basics/collections.md
+    - 闭包与迭代器: basics/closures_and_iterators.md
+    - 智能指针: basics/smart_pointers.md
+    - 并发编程基础: basics/concurrency.md
+    - 宏基础: basics/macros.md
+  - 常用部分:
+    - 常用标准库: common/standard_library.md
+    - 文件操作: common/file_operations.md
+    - 网络编程: common/networking.md
+    - 序列化与反序列化: common/serialization.md
+    - 测试: common/testing.md
+    - 异步编程: common/async_programming.md
+    - Web框架: common/web_frameworks.md
+    - 数据库操作: common/database.md
+    - 常用工具与宏: common/utilities_and_macros.md
+
+plugins:
+  - search

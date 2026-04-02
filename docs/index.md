@@ -1,17 +1,68 @@
-# Welcome to MkDocs
+# Rust 核心知识库
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+欢迎来到 Rust 核心知识库！这是一个系统性的 Rust 学习笔记，涵盖了从基础语法到常用库的各个方面。
 
-## Commands
+## 什么是 Rust？
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
+Rust 是一种系统编程语言，专注于安全性、并发性和性能。它由 Mozilla 研究院开发，旨在提供 C++ 级别的控制能力，同时保证内存安全。
 
-## Project layout
+## Rust 的主要特点
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+- **内存安全**：通过所有权系统在编译时防止内存错误
+- **零成本抽象**：高级抽象不会带来运行时性能损失
+- **并发安全**：编译器防止数据竞争
+- **高性能**：与 C/C++ 相当的性能
+- **丰富的类型系统**：支持泛型、特征（traits）等现代语言特性
+- **优秀的工具链**：Cargo 包管理器、rustfmt 格式化、clippy 代码检查等
+
+## 知识库结构
+
+本知识库分为两个主要部分：
+
+### 基础部分
+从基本语法到核心概念，适合初学者系统学习：
+
+1. **简介与安装** - Rust 概述和开发环境搭建
+2. **基本语法与数据类型** - 变量、数据类型、运算符等
+3. **所有权与借用** - Rust 的核心内存管理机制
+4. **生命周期** - 引用的有效期管理
+5. **结构体与枚举** - 自定义数据类型
+6. **模式匹配** - 强大的模式匹配语法
+7. **错误处理** - Result 和 Option 的使用
+8. **泛型与特征** - 代码复用和抽象
+9. **集合类型** - Vec、HashMap 等常用集合
+10. **闭包与迭代器** - 函数式编程特性
+11. **智能指针** - Box、Rc、Arc 等
+12. **并发编程基础** - 线程、消息传递、共享状态
+13. **宏基础** - 元编程入门
+
+### 常用部分
+实用性较强的库和工具，适合实际开发参考：
+
+1. **常用标准库** - 标准库中的常用模块
+2. **文件操作** - 文件读写和目录操作
+3. **网络编程** - HTTP、TCP/UDP 等
+4. **序列化与反序列化** - JSON、YAML 等格式处理
+5. **测试** - 单元测试和集成测试
+6. **异步编程** - async/await 和 Future
+7. **Web框架** - Actix-web、Rocket 等
+8. **数据库操作** - SQLx、Diesel 等 ORM
+9. **常用工具与宏** - 开发中的实用工具
+
+## 如何使用本知识库
+
+1. **初学者**：建议从基础部分开始，按顺序学习
+2. **有经验的开发者**：可以直接查阅常用部分，或按需查阅特定主题
+3. **快速参考**：每个章节都有代码示例，可以直接复制使用
+
+## 参考资料
+
+- [Rust 官方网站](https://www.rust-lang.org/)
+- [Rust 程序设计语言](https://doc.rust-lang.org/book/)
+- [Rust 标准库文档](https://doc.rust-lang.org/std/)
+- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
+- [Rust 异步编程](https://rust-lang.github.io/async-book/)
+
+---
+
+**注意**：本知识库基于 Rust 2021 版本，代码示例在最新稳定版 Rust 中测试通过。

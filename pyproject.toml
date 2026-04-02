@@ -1,0 +1,10 @@
+[project]
+name = "smallzh-rust"
+version = "0.1.0"
+description = "rust的相关知识汇总"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mkdocs>=1.6.1",
+    "mkdocs-smzhbook-theme>=1.1",
+]
